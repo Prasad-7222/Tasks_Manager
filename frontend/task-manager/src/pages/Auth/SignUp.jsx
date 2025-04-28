@@ -49,7 +49,7 @@ const SignUp = () => {
       }
 
       const response = await axiosInstance.post(
-        `http://localhost:8000${API_PATHS.AUTH.REGISTER}`,
+        `https://tasks-manager-qrho.onrender.com${API_PATHS.AUTH.REGISTER}`,
         {
           // const response = await axios.post(
           //   `http://localhost:8000${API_PATHS.AUTH.LOGIN}`,
