@@ -6,7 +6,7 @@ const AuthLayout = ({ children }) => {
       <div className="w-full md:w-[60vw] flex items-center justify-center px-8">
         <div className="w-full max-w-md mx-auto transform -translate-x-2">
           <h2 className="text-lg font-medium text-black text-center mb-8">
-            TaskSphere
+            TaskPro
           </h2>
           {children}
         </div>
