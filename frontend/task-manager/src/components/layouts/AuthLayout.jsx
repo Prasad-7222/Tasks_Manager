@@ -1,16 +1,21 @@
 import React from "react";
-import UI_IMG from "../../assets/images/auth-img.png";
 
 const AuthLayout = ({ children }) => {
   return (
-    <div className="flex">
-      <div className="w-screen md:w-[60vw] px-8 pb-12">
-        <h2 className="text-lg font-medium text-black">Task Manager</h2>
-        {children}
+    <div className="flex h-screen">
+      <div className="w-full md:w-[60vw] flex items-center justify-center px-8">
+        <div className="w-full max-w-md mx-auto transform -translate-x-2">
+          <h2 className="text-lg font-medium text-black text-center mb-8">
+            Task Manager
+          </h2>
+          {children}
+        </div>
       </div>
-      <div className="hidden md:flex w-[40vw] h-screen items-center justify-center bg-blue-50 bg-[url('/bg-img.png')] bg-cover bg-no-repeat bg-center overflow-hidden p-8">
-        <img src={UI_IMG} className="w-64 lg:w-[90]" />
-      </div>
+
+      {/* Optional right-side image section */}
+      {/* <div className="hidden md:flex w-[40vw] h-screen items-center justify-center bg-blue-50 bg-[url('/bg-img.png')] bg-cover bg-no-repeat bg-center overflow-hidden p-8"> */}
+      {/* <img src={UI_IMG} className="w-64 lg:w-[90]" /> */}
+      {/* </div> */}
     </div>
   );
 };
